@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>КиноВикипедия</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo">КиноВикипедия</div>
+            <nav class="nav">
+                <a href="#" class="nav-item" data-category="now_playing">Сейчас смотрят</a>
+                <a href="#" class="nav-item" data-category="top_rated">Лучшие</a>
+                <a href="#" class="nav-item" data-category="upcoming">Новое</a>
+            </nav>
+            <div class="forms">
+                <select id="genre-select" class="genre-select border-parts">
+                    <option class="genre" value="">Выберите жанр</option>
+                </select>
+                <form id="search-form" class="search-form border-parts">
+                    <input type="text" id="search-input" class="search-input" placeholder="Поиск...">
+                    <button type="submit" class="search-btn">Найти</button>
+                </form>
+                <button id="open-favorites" class="btn-favorites">Избранное</button>
+            </div>
+        </header>
+
+        <main class="main">
+            <section id="items">
+                <div class="items"></div>
+                <div class="pagination"></div>
+            </section>
+            
+            <section>
+                <div class="movie-page hide"></div>
+            </section>
+            
+            <section>
+                <div id="favorite-list" class="favorite-list hide"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
